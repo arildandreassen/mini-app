@@ -1,0 +1,14 @@
+.puppy-container {
+  display: flex;
+  justify-content: center;
+}
+
+.frame {
+  width: 900px;
+}
+
+.picture {
+  height: 300px;
+  width: 400px;
+  margin: 10px;
+}

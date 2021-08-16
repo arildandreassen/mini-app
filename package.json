@@ -4,20 +4,32 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "prod": "node server.js",
     "server": "nodemon server.js",
     "client": "cd client && npm run start",
-    "dev": "concurrently \"npm run server\" \"npm run client \" "
+    "start": "concurrently \"npm run server\" \"npm run client \" ",
+    "cy:e2e:open": "npx cypress open --config baseUrl=http://localhost:3000,testFiles=e2e.spec.js",
+    "cy:api:open": "npx cypress open --config baseUrl=http://localhost:5000,testFiles=api.spec.js",
+    "cy:e2e:run": "npx cypress run --config baseUrl=http://localhost:3000,testFiles=e2e.spec.js",
+    "cy:api:run": "npx cypress run --config baseUrl=http://localhost:5000,testFiles=api.spec.js",
+    "cy": "npm run cy:api:run && npm run cy:e2e:run"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@bahmutov/cy-api": "^1.5.0",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^5.0.2",
     "concurrently": "^6.2.1",
     "express": "^4.17.1",
+    "install": "^0.13.0",
+    "npm": "^7.20.6",
+    "react-bootstrap": "^2.0.0-beta.4",
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
+    "cypress": "^8.3.0",
     "nodemon": "^2.0.12"
   }
 }

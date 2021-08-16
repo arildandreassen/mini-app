@@ -1,0 +1,36 @@
+.foodCalculator {
+  margin-top: 100px;
+}
+
+.foodCalculator li {
+  list-style-type: none;
+}
+
+.foodCalculator .entry {
+  width: 100px;
+}
+
+.foodCalculator > div > div {
+  display: flex;
+  justify-content: center;
+}
+
+.foodCalculator > div > div > div {
+  width: 150px;
+}
+
+.label {
+  text-align: right;
+}
+
+.leftover {
+  margin-top: 20px;
+}
+
+.calculateButton {
+  margin-top: 50px;
+}
+
+.result {
+  margin-top: 30px;
+}

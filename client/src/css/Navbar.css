@@ -1,0 +1,11 @@
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav div {
+  padding-left: 2px;
+  padding-right: 2px;
+  margin: 0 auto;
+}
